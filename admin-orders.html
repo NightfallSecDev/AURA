@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | Rose Nude Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <a href="admin.html" class="admin-brand">AURA<span>.</span></a>
+            <ul class="admin-nav">
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="admin-products.html">Products</a></li>
+                <li><a href="admin-orders.html" class="active">Orders</a></li>
+                <li><a href="index.html" style="margin-top: auto; border-top: 1px solid var(--border-soft);">View Storefront</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="admin-header fade-up">
+                <h1 class="admin-title">Order Tracker</h1>
+            </div>
+
+            <!-- Orders Table -->
+            <div class="admin-table-container fade-up" style="transition-delay: 0.1s;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Communication</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#10042</td>
+                            <td>Today, 10:45 AM</td>
+                            <td>Eleanor Vance</td>
+                            <td>$142.00</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <button class="action-btn" onclick="alert('Customer WhatsApp: +1 (555) 019-2847\n\nOpening WhatsApp Web...')">WhatsApp Customer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#10041</td>
+                            <td>Yesterday, 3:20 PM</td>
+                            <td>Sarah Jenkins</td>
+                            <td>$68.00</td>
+                            <td><span class="status-badge status-shipped">Shipped</span></td>
+                            <td>
+                                <button class="action-btn" onclick="alert('Customer WhatsApp: +1 (555) 837-1123\n\nOpening WhatsApp Web...')">WhatsApp Customer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#10040</td>
+                            <td>May 16, 11:15 AM</td>
+                            <td>Mia Wong</td>
+                            <td>$210.00</td>
+                            <td><span class="status-badge status-completed">Completed</span></td>
+                            <td>
+                                <button class="action-btn" onclick="alert('Customer WhatsApp: +44 7700 900077\n\nOpening WhatsApp Web...')">WhatsApp Customer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#10039</td>
+                            <td>May 15, 9:00 AM</td>
+                            <td>Isabella Rossi</td>
+                            <td>$48.00</td>
+                            <td><span class="status-badge status-completed">Completed</span></td>
+                            <td>
+                                <button class="action-btn" onclick="alert('Customer WhatsApp: +39 339 123 4567\n\nOpening WhatsApp Web...')">WhatsApp Customer</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll('.fade-up');
+            elements.forEach(el => el.classList.add('visible'));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Rose Serum | Rose Nude</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">AURA</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="login.html" class="nav-cart" style="font-weight: 400;">Log In</a>
+            <a href="checkout.html" class="nav-cart">Cart (0)</a>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="single-product-container fade-up">
+            
+            <!-- Left Column: Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" alt="Luminous Rose Serum">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img class="thumb active-thumb" src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" onclick="swapImage(this)" alt="Thumb 1">
+                    <img class="thumb" src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" onclick="swapImage(this)" alt="Thumb 2">
+                    <img class="thumb" src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" onclick="swapImage(this)" alt="Thumb 3" style="filter: hue-rotate(45deg);">
+                    <img class="thumb" src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" onclick="swapImage(this)" alt="Thumb 4" style="filter: grayscale(1);">
+                </div>
+            </div>
+            
+            <!-- Right Column: Details -->
+            <div class="product-details">
+                <div class="product-rating">★★★★★ <span>4.9 (128 Reviews)</span></div>
+                <h1>Luminous Rose Serum</h1>
+                
+                <div class="product-price">
+                    <del>$65.00</del>
+                    <span class="sale-price">$48.00</span>
+                </div>
+                
+                <div class="urgency-timer">
+                    <span class="timer-icon">⚡</span> Flash Sale ends in: <strong id="countdownTimer">02:45:00</strong>
+                </div>
+                
+                <p class="product-description">
+                    A highly concentrated organic serum crafted to naturally illuminate and restore your skin's vitality. 
+                    Formulated with hand-picked botanical extracts to deliver deep hydration without feeling heavy.
+                </p>
+                
+                <div class="variants-section">
+                    <div class="variant-group">
+                        <label>Color</label>
+                        <div class="color-swatches">
+                            <div class="swatch active" style="background-color: var(--dusty-rose);" onclick="selectVariant(this, 'swatch')"></div>
+                            <div class="swatch" style="background-color: var(--warm-taupe);" onclick="selectVariant(this, 'swatch')"></div>
+                            <div class="swatch" style="background-color: #EFEBE7;" onclick="selectVariant(this, 'swatch')"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="variant-group">
+                        <label>Size</label>
+                        <div class="size-pills">
+                            <div class="size-pill active" onclick="selectVariant(this, 'size-pill')">30ml</div>
+                            <div class="size-pill" onclick="selectVariant(this, 'size-pill')">50ml</div>
+                            <div class="size-pill" onclick="selectVariant(this, 'size-pill')">100ml</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="cta-button secondary-btn" onclick="alert('Added to Cart!')">Add to Cart</button>
+                    <button class="cta-button primary-btn" onclick="location.href='checkout.html'">Buy Now</button>
+                </div>
+                
+                <div class="product-share">
+                    <a href="#" onclick="event.preventDefault(); alert('Link copied to clipboard!');">➦ Share this product</a>
+                </div>
+
+                <div class="vertical-accordion fade-up">
+                    <!-- Product Description -->
+                    <div class="accordion-item active">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Product Description <span class="icon">−</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: 500px; padding-bottom: 20px;">
+                            <p>A highly concentrated organic serum crafted to naturally illuminate and restore your skin's vitality. Formulated with hand-picked botanical extracts to deliver deep hydration without feeling heavy. It absorbs instantly, leaving a radiant, dewy finish.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- How to use -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            How to use <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Apply 3-4 drops to cleansed and toned skin morning and night. Massage in upward, circular motions until fully absorbed. Follow with your favorite moisturizer. Can also be mixed with foundation for a luminous glow.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefits -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Benefits <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Deeply hydrates and locks in moisture</li>
+                                <li>Visibly brightens dull complexions</li>
+                                <li>Reduces the appearance of fine lines</li>
+                                <li>Soothes redness and inflammation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Information -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Additional Information <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Volume:</strong> 30ml / 1.0 fl oz<br>
+                            <strong>Scent:</strong> Natural Damask Rose<br>
+                            <strong>Texture:</strong> Lightweight, fast-absorbing oil-serum<br>
+                            <strong>Packaging:</strong> 100% recyclable glass bottle</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Frequently Asked Questions <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Is it suitable for sensitive skin?</strong><br>Yes, all our formulas are dermatologist tested and free from synthetic fragrances.</p>
+                            <p style="margin-top: 10px;"><strong>When will I see results?</strong><br>Most users report visibly brighter, softer skin within 7-14 days of consistent use.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Reviews Section -->
+    <section class="page-container product-reviews-section fade-up" style="margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--border-soft);">
+        <h2 style="font-size: 2.5rem; font-weight: 300; color: var(--warm-taupe); margin-bottom: 40px; text-align: center;">Customer Reviews</h2>
+        <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+            <!-- Review Summary -->
+            <div style="flex: 1; min-width: 250px; max-width: 350px; text-align: center; padding: 40px; background: #EFEBE7; border-radius: var(--radius); border: var(--border-soft);">
+                <div style="font-size: 4.5rem; color: var(--dusty-rose); font-weight: 300; line-height: 1;">4.9</div>
+                <div style="color: var(--dusty-rose); font-size: 1.5rem; margin: 15px 0; letter-spacing: 2px;">★★★★★</div>
+                <p style="color: var(--warm-taupe); font-weight: 300; margin-bottom: 25px;">Based on 128 reviews</p>
+                <button class="cta-button primary-btn" style="width: 100%;" onclick="alert('Review modal would open here.')">Write a Review</button>
+            </div>
+            <!-- Review List -->
+            <div style="flex: 2; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
+                <div class="review-card">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center;">
+                        <strong style="color: var(--warm-taupe); font-size: 1.1rem; font-weight: 500;">Sarah M. <span style="font-size: 0.8rem; color: #aaa; margin-left: 10px; font-weight: 300;">Verified Buyer</span></strong>
+                        <span style="color: var(--dusty-rose); letter-spacing: 2px;">★★★★★</span>
+                    </div>
+                    <h4 style="margin-bottom: 10px; color: var(--text-dark); font-weight: 400; font-size: 1.2rem;">Absolutely transformative</h4>
+                    <p style="font-weight: 300;">I've been using this serum for three weeks and the glow is undeniable. It's lightweight but deeply hydrating. Will definitely repurchase!</p>
+                </div>
+                <div class="review-card">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center;">
+                        <strong style="color: var(--warm-taupe); font-size: 1.1rem; font-weight: 500;">Elena R. <span style="font-size: 0.8rem; color: #aaa; margin-left: 10px; font-weight: 300;">Verified Buyer</span></strong>
+                        <span style="color: var(--dusty-rose); letter-spacing: 2px;">★★★★★</span>
+                    </div>
+                    <h4 style="margin-bottom: 10px; color: var(--text-dark); font-weight: 400; font-size: 1.2rem;">Smells like heaven</h4>
+                    <p style="font-weight: 300;">The natural rose scent is so calming before bed. My skin feels incredibly plump and soft every morning.</p>
+                </div>
+                <button class="cta-button secondary-btn" style="align-self: flex-start; margin-top: 10px;">Load More Reviews</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section class="page-container recommended-section fade-up" style="margin-top: 60px; padding-top: 60px; border-top: 1px solid var(--border-soft); margin-bottom: 80px;">
+        <h2 style="font-size: 2.5rem; font-weight: 300; color: var(--warm-taupe); margin-bottom: 40px; text-align: center;">You May Also Like</h2>
+        <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <!-- Rec 1 -->
+            <div class="bento-card" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" alt="Oat & Honey Soap" style="width: 100%; height: 70%; object-fit: cover;">
+                        <div style="padding: 20px;">
+                            <h3 style="font-weight: 400; color: var(--warm-taupe); font-size: 1.5rem;">Oat & Honey Soap</h3>
+                            <p style="color: var(--dusty-rose); margin-top: 5px;">$18.00</p>
+                        </div>
+                    </div>
+                    <div class="card-back" style="padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="color: var(--warm-taupe); margin-bottom: 20px;">Ingredients</h3>
+                        <ul style="list-style: none; color: var(--text-dark); line-height: 1.8;">
+                            <li>Colloidal Oatmeal</li>
+                            <li>Raw Manuka Honey</li>
+                            <li>Shea Butter</li>
+                        </ul>
+                        <button class="cta-button add-to-cart" style="margin-top: 20px; padding: 10px 30px;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rec 2 -->
+            <div class="bento-card" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" alt="Botanical Night Cream" style="width: 100%; height: 70%; object-fit: cover; filter: hue-rotate(90deg);">
+                        <div style="padding: 20px;">
+                            <h3 style="font-weight: 400; color: var(--warm-taupe); font-size: 1.5rem;">Botanical Night Cream</h3>
+                            <p style="color: var(--dusty-rose); margin-top: 5px;">$55.00</p>
+                        </div>
+                    </div>
+                    <div class="card-back" style="padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="color: var(--warm-taupe); margin-bottom: 20px;">Ingredients</h3>
+                        <ul style="list-style: none; color: var(--text-dark); line-height: 1.8;">
+                            <li>Squalane</li>
+                            <li>Ceramides</li>
+                            <li>Lavender Oil</li>
+                        </ul>
+                        <button class="cta-button add-to-cart" style="margin-top: 20px; padding: 10px 30px;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rec 3 -->
+            <div class="bento-card" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" alt="Charcoal Detox Bar" style="width: 100%; height: 70%; object-fit: cover; filter: grayscale(1);">
+                        <div style="padding: 20px;">
+                            <h3 style="font-weight: 400; color: var(--warm-taupe); font-size: 1.5rem;">Charcoal Detox Bar</h3>
+                            <p style="color: var(--dusty-rose); margin-top: 5px;">$22.00</p>
+                        </div>
+                    </div>
+                    <div class="card-back" style="padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="color: var(--warm-taupe); margin-bottom: 20px;">Ingredients</h3>
+                        <ul style="list-style: none; color: var(--text-dark); line-height: 1.8;">
+                            <li>Activated Charcoal</li>
+                            <li>Tea Tree Oil</li>
+                            <li>Coconut Oil</li>
+                        </ul>
+                        <button class="cta-button add-to-cart" style="margin-top: 20px; padding: 10px 30px;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global FAQ -->
+    <section class="global-faq-section page-container fade-up" style="margin-top: 0;">
+        <h2 class="page-title" style="margin-bottom: 40px; font-size: 3rem;">Frequently Asked Questions</h2>
+        <div class="vertical-accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Are your products truly 100% organic? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes. Every botanical extract, oil, and butter we use is certified organic, sourced from sustainable farms without the use of pesticides or synthetic fertilizers.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Do you offer international shipping? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We currently ship to the US, Canada, UK, and select countries in the EU. International shipping rates are calculated at checkout.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    What is your return policy? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We offer a 30-day money-back guarantee. If you are not completely satisfied with your Aura Organics purchase, simply return the gently used product for a full refund.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Are your products safe for sensitive skin? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Absolutely. Our minimalist approach means we formulate without harsh chemicals, synthetic fragrances, or common irritants, making our collection ideal for sensitive skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="global-footer fade-up">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2>AURA</h2>
+                <p>Minimalist skincare crafted with 100% organic botanical extracts. Revealing your natural radiance through the power of nature.</p>
+                <div style="font-size: 1.5rem; letter-spacing: 15px; margin-top: 20px;">
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Ig</a>
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Fb</a>
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Pt</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html">Serums & Oils</a></li>
+                    <li><a href="products.html">Organic Soaps</a></li>
+                    <li><a href="products.html">Night Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h3>Join our community</h3>
+                <p style="margin-bottom: 15px;">Subscribe to receive 15% off your first order and exclusive access to new launches.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email address">
+                    <button type="button" onclick="alert('Subscribed successfully!')">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Aura Organics. Minimalist skincare. Cruelty-free.</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

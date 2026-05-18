@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Rose Nude</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <a href="admin.html" class="admin-brand">AURA<span>.</span></a>
+            <ul class="admin-nav">
+                <li><a href="admin.html" class="active">Dashboard</a></li>
+                <li><a href="admin-products.html">Products</a></li>
+                <li><a href="admin-orders.html">Orders</a></li>
+                <li><a href="index.html" style="margin-top: auto; border-top: 1px solid var(--border-soft);">View Storefront</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="admin-header fade-up">
+                <h1 class="admin-title">Dashboard Overview</h1>
+            </div>
+
+            <!-- Metrics -->
+            <div class="admin-metrics fade-up" style="transition-delay: 0.1s;">
+                <div class="metric-card">
+                    <div class="metric-title">Total Sales (Today)</div>
+                    <div class="metric-value">$4,250.00</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Pending Orders</div>
+                    <div class="metric-value">12</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Total Revenue (Month)</div>
+                    <div class="metric-value">$68,400.00</div>
+                </div>
+            </div>
+
+            <!-- System Health -->
+            <div class="storage-monitor fade-up" style="transition-delay: 0.2s;">
+                <div class="storage-header">
+                    <span style="font-size: 1.2rem; font-weight: 500;">Dedicated VPS Database Storage</span>
+                    <span style="color: var(--dusty-rose); font-weight: 500;">4.2 GB / 10 GB</span>
+                </div>
+                <div class="progress-track">
+                    <!-- Progress bar fills to 42% -->
+                    <div class="progress-fill" style="width: 42%;"></div>
+                </div>
+                <p style="margin-top: 15px; font-weight: 300; color: var(--warm-taupe);">System Health is Excellent. Operating at optimal capacity.</p>
+            </div>
+
+            <!-- Quick Recent Activity -->
+            <div class="admin-table-container fade-up" style="transition-delay: 0.3s;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#10042</td>
+                            <td>Eleanor Vance</td>
+                            <td>$142.00</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>#10041</td>
+                            <td>Sarah Jenkins</td>
+                            <td>$68.00</td>
+                            <td><span class="status-badge status-shipped">Shipped</span></td>
+                        </tr>
+                        <tr>
+                            <td>#10040</td>
+                            <td>Mia Wong</td>
+                            <td>$210.00</td>
+                            <td><span class="status-badge status-completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Ensure fade-up animation runs immediately in the dashboard
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll('.fade-up');
+            elements.forEach(el => el.classList.add('visible'));
+        });
+    </script>
+</body>
+</html>

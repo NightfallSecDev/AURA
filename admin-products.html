@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Rose Nude Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <a href="admin.html" class="admin-brand">AURA<span>.</span></a>
+            <ul class="admin-nav">
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="admin-products.html" class="active">Products</a></li>
+                <li><a href="admin-orders.html">Orders</a></li>
+                <li><a href="index.html" style="margin-top: auto; border-top: 1px solid var(--border-soft);">View Storefront</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="admin-header fade-up">
+                <h1 class="admin-title">Product Management</h1>
+                <div style="display: flex; gap: 15px;">
+                    <button class="action-btn ai-btn" onclick="alert('Connecting to AI processing pipeline... Generated SEO optimized description successfully!')">✨ Generate Description with AI</button>
+                    <button class="action-btn" style="background-color: var(--text-dark); color: white; border-color: var(--text-dark);">+ Add New Product</button>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="admin-table-container fade-up" style="transition-delay: 0.1s;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>SKU</th>
+                            <th>Price</th>
+                            <th>Stock Level</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Luminous Rose Serum</td>
+                            <td>RN-LRS-01</td>
+                            <td>$48.00</td>
+                            <td><span style="color: #155724; font-weight: 500;">450 in stock</span></td>
+                            <td>
+                                <button class="action-btn">Edit</button>
+                                <button class="action-btn" style="color: #dc3545; border-color: #dc3545;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Botanical Hydrating Toner</td>
+                            <td>RN-BHT-02</td>
+                            <td>$35.00</td>
+                            <td><span style="color: #155724; font-weight: 500;">320 in stock</span></td>
+                            <td>
+                                <button class="action-btn">Edit</button>
+                                <button class="action-btn" style="color: #dc3545; border-color: #dc3545;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lavender Calming Bar</td>
+                            <td>RN-LCB-03</td>
+                            <td>$16.00</td>
+                            <td><span style="color: #856404; font-weight: 500;">12 in stock</span></td>
+                            <td>
+                                <button class="action-btn">Edit</button>
+                                <button class="action-btn" style="color: #dc3545; border-color: #dc3545;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin C Brightening Drops</td>
+                            <td>RN-VCD-04</td>
+                            <td>$68.00</td>
+                            <td><span style="color: #155724; font-weight: 500;">180 in stock</span></td>
+                            <td>
+                                <button class="action-btn">Edit</button>
+                                <button class="action-btn" style="color: #dc3545; border-color: #dc3545;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll('.fade-up');
+            elements.forEach(el => el.classList.add('visible'));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Nude | Premium Organic Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Header -->
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">AURA</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" style="color: var(--dusty-rose);">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="login.html" class="nav-cart" style="font-weight: 400;">Log In</a>
+            <a href="checkout.html" class="nav-cart">Cart (0)</a>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Cover -->
+    <section class="hero-cover" style="position: relative; height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; margin-bottom: 80px;">
+        <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+            <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: brightness(0.95);" alt="Modern Cover Background">
+        </div>
+        
+        <div class="hero-content glass-card" style="max-width: 800px; padding: 70px 50px; background: rgba(253, 251, 247, 0.65); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: var(--radius); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: var(--shadow-hover); margin: 0 20px; transform: translateY(-20px);">
+            <h1 style="font-size: 6rem; font-weight: 300; color: var(--warm-taupe); margin-bottom: 10px; letter-spacing: -3px; line-height: 1.1;">Rose Nude</h1>
+            <p class="subtitle" style="font-size: 1.4rem; font-weight: 400; color: var(--dusty-rose); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 6px;">Pure Botanical Elements</p>
+            <p class="description" style="font-size: 1.25rem; color: var(--text-dark); margin: 0 auto 40px; max-width: 500px; line-height: 1.6;">Experience the minimalist luxury of our organic skincare collection. Crafted with natural ingredients to reveal your inner radiance.</p>
+            <a href="products.html" class="cta-button" style="background-color: var(--warm-taupe); color: var(--clean-white); font-size: 1.2rem; padding: 18px 50px;">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- 3. Categories (Buttery Accordion) -->
+    <section class="categories-section page-container">
+        <h2 style="text-align: center; color: var(--warm-taupe); margin-bottom: 10px; font-weight: 300; font-size: 3rem;">Shop by Category</h2>
+        <p class="section-subtext">Discover our curated botanical collections tailored for your unique skin journey.</p>
+        <div class="category-accordion">
+            <div class="acc-panel" onclick="location.href='products.html'">
+                <h3>Serums</h3>
+                <div class="acc-content"><p>Concentrated active ingredients to naturally illuminate and restore your skin.</p></div>
+            </div>
+            <div class="acc-panel" onclick="location.href='products.html'">
+                <h3>Organic Soaps</h3>
+                <div class="acc-content"><p>Handcrafted, cold-pressed soaps infused with pure botanicals and raw honey.</p></div>
+            </div>
+            <div class="acc-panel" onclick="location.href='products.html'">
+                <h3>Hydration</h3>
+                <div class="acc-content"><p>Deeply nourishing creams and face oils for a supple, dewy complexion.</p></div>
+            </div>
+            <div class="acc-panel" onclick="location.href='products.html'">
+                <h3>Night Care</h3>
+                <div class="acc-content"><p>Revitalizing overnight treatments that work while your skin rests.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Best Sellers (Bento Grid) -->
+    <section class="best-sellers-section page-container">
+        <h2 style="text-align: center; color: var(--warm-taupe); margin-bottom: 10px; font-weight: 300; font-size: 3rem;">Best Sellers</h2>
+        <p class="section-subtext">Our most adored organic formulas, trusted by thousands to reveal their inner glow.</p>
+        <div class="bento-grid home-bento">
+            
+            <!-- Card 1 -->
+            <div class="bento-card card-large" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="image-wrapper">
+                            <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/organic_cosmetic_bottles_1779094160746.png" alt="Rose Serum">
+                        </div>
+                        <div class="card-info">
+                            <h3>Luminous Rose Serum</h3>
+                            <span>$48.00</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Organic Ingredients</h3>
+                        <ul>
+                            <li>Damask Rose Extract</li>
+                            <li>Cold-pressed Rosehip Oil</li>
+                            <li>Vegan Hyaluronic Acid</li>
+                            <li>Vitamin E</li>
+                        </ul>
+                        <a href="product-single.html" class="add-to-cart">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bento-card card-small" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="image-wrapper">
+                            <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" alt="Oat & Honey Soap">
+                        </div>
+                        <div class="card-info">
+                            <h3>Oat & Honey Bar</h3>
+                            <span>$22.00</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Organic Ingredients</h3>
+                        <ul>
+                            <li>Colloidal Oatmeal</li>
+                            <li>Raw Manuka Honey</li>
+                            <li>Shea Butter</li>
+                        </ul>
+                        <a href="product-single.html" class="add-to-cart">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bento-card card-small" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="image-wrapper">
+                            <img src="/home/kali/.gemini/antigravity/brain/55a701bc-0f12-4bab-aacf-cf463aa1cc7d/luxury_soap_bars_1779094179620.png" alt="Charcoal Soap">
+                        </div>
+                        <div class="card-info">
+                            <h3>Charcoal Detox Bar</h3>
+                            <span>$24.00</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Organic Ingredients</h3>
+                        <ul>
+                            <li>Activated Charcoal</li>
+                            <li>Tea Tree Oil</li>
+                            <li>Coconut Oil</li>
+                        </ul>
+                        <a href="product-single.html" class="add-to-cart">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. Trust Badges Marquee -->
+    <section class="trust-marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-item">✦ 100% Organic Botanical Extracts &nbsp;&nbsp;&nbsp; ✦ Cruelty-Free & Vegan &nbsp;&nbsp;&nbsp; ✦ Dermatologist Tested &nbsp;&nbsp;&nbsp; ✦ Sustainable Packaging &nbsp;&nbsp;&nbsp; </span>
+            <span class="marquee-item">✦ 100% Organic Botanical Extracts &nbsp;&nbsp;&nbsp; ✦ Cruelty-Free & Vegan &nbsp;&nbsp;&nbsp; ✦ Dermatologist Tested &nbsp;&nbsp;&nbsp; ✦ Sustainable Packaging &nbsp;&nbsp;&nbsp; </span>
+        </div>
+    </section>
+
+    <!-- 6. Promo Banner -->
+    <section class="promo-banner" style="background-color: var(--warm-taupe); color: var(--clean-white); padding: 100px 20px; text-align: center; margin: 60px 0;">
+        <h2 style="font-size: 4rem; font-weight: 300; margin-bottom: 20px; color: var(--dusty-rose);">Your Radiant Glow Awaits</h2>
+        <p style="font-size: 1.5rem; margin-bottom: 40px; font-weight: 300;">Get 15% off your first order with code <strong style="color: var(--clean-white); font-weight: 500;">GLOW15</strong></p>
+        <a href="products.html" class="cta-button" style="background-color: var(--clean-white); color: var(--warm-taupe);">Shop Now</a>
+    </section>
+
+    <!-- 7. Reviews -->
+    <section class="reviews-section page-container">
+        <h2 style="text-align: center; color: var(--warm-taupe); margin-bottom: 10px; font-weight: 300; font-size: 3rem;">Loved by You</h2>
+        <p class="section-subtext">Real stories and radiant results from our beautiful community.</p>
+        <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="review-card">
+                <div class="stars" style="color: var(--dusty-rose); margin-bottom: 15px; font-size: 1.5rem;">★★★★★</div>
+                <p>"The Luminous Rose Serum completely changed my skincare routine. My skin has never looked so naturally glowing and healthy."</p>
+                <span class="author">- Emma W.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars" style="color: var(--dusty-rose); margin-bottom: 15px; font-size: 1.5rem;">★★★★★</div>
+                <p>"I love the minimalist approach and the fact that everything is 100% organic. The Charcoal Detox Bar is absolutely incredible."</p>
+                <span class="author">- Sarah L.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars" style="color: var(--dusty-rose); margin-bottom: 15px; font-size: 1.5rem;">★★★★★</div>
+                <p>"Finally a brand that cares about sustainability as much as the product quality. The packaging is beautifully designed!"</p>
+                <span class="author">- Jessica M.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <!-- Global FAQ -->
+    <section class="global-faq-section page-container fade-up">
+        <h2 class="page-title" style="margin-bottom: 40px; font-size: 3rem;">Frequently Asked Questions</h2>
+        <div class="vertical-accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Are your products truly 100% organic? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes. Every botanical extract, oil, and butter we use is certified organic, sourced from sustainable farms without the use of pesticides or synthetic fertilizers.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Do you offer international shipping? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We currently ship to the US, Canada, UK, and select countries in the EU. International shipping rates are calculated at checkout.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    What is your return policy? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>We offer a 30-day money-back guarantee. If you are not completely satisfied with your Aura Organics purchase, simply return the gently used product for a full refund.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    Are your products safe for sensitive skin? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Absolutely. Our minimalist approach means we formulate without harsh chemicals, synthetic fragrances, or common irritants, making our collection ideal for sensitive skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="global-footer fade-up">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2>AURA</h2>
+                <p>Minimalist skincare crafted with 100% organic botanical extracts. Revealing your natural radiance through the power of nature.</p>
+                <div style="font-size: 1.5rem; letter-spacing: 15px; margin-top: 20px;">
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Ig</a>
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Fb</a>
+                    <a href="#" style="color: var(--dusty-rose); text-decoration: none;">Pt</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html">Serums & Oils</a></li>
+                    <li><a href="products.html">Organic Soaps</a></li>
+                    <li><a href="products.html">Night Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h3>Join our community</h3>
+                <p style="margin-bottom: 15px;">Subscribe to receive 15% off your first order and exclusive access to new launches.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email address">
+                    <button type="button" onclick="alert('Subscribed successfully!')">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Aura Organics. Minimalist skincare. Cruelty-free.</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
