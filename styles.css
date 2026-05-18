@@ -275,18 +275,45 @@ body {
     padding: 24px;
     background: var(--clean-white);
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+}
+.card-info-header {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
-
 .card-info h3 {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--text-dark);
+    margin: 0;
 }
-
-.card-info span {
-    font-size: 1.1rem;
+.card-stars {
+    color: var(--dusty-rose);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.card-stars span {
+    color: var(--warm-taupe);
+    font-size: 0.8rem;
+    letter-spacing: normal;
+}
+.card-price-group {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.card-price-group del {
+    color: var(--warm-taupe);
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+.card-price-group .sale-price {
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--dusty-rose);
 }
